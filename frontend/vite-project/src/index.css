@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(148, 163, 184, 0.14), transparent 30%),
+    radial-gradient(circle at right 20%, rgba(217, 119, 6, 0.08), transparent 24%),
+    #f4f6f8;
+  color: #0f172a;
+  font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::selection {
+  background: rgba(37, 99, 235, 0.18);
+}
+
+.field-input {
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  border-radius: 1rem;
+  background: #f8fafc;
+  padding: 0.875rem 1rem;
+  font-size: 0.875rem;
+  color: #0f172a;
+  outline: none;
+  transition: border-color 120ms ease, background-color 120ms ease, box-shadow 120ms ease;
+}
+
+.field-input:focus {
+  border-color: #94a3b8;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(148, 163, 184, 0.15);
+}
